@@ -24,7 +24,7 @@ func TestQueryInstanceOffering(t *testing.T) {
 	t.Log("TestQueryInstanceOffering")
 	params := param.NewQueryParam()
 	params.AddQ("name=InstanceOffering-1")
-	offering, err := accountLoginCli.QueryInstaceOffering(params)
+	offering, err := accountLoginCli.QueryInstanceOffering(params)
 	if err != nil {
 		t.Errorf("TestQueryInstanceOffering error %v", err)
 		return
